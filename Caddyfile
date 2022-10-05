@@ -1,0 +1,14 @@
+:80
+
+handle_path /api/* {
+	reverse_proxy backend:8000 {
+        header_up Host {upstream_hostport}
+        header_up X-Real-IP {remote_addr}
+    }
+}
+
+handle {
+        root * /usr/share/caddy/
+        try_files {path} {file} /index.html
+        file_server
+}

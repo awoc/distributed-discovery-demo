@@ -1,0 +1,8 @@
+svg {
+  width: 100%;
+}
+
+.viewer-button {
+  @apply inline-block px-3 py-2 bg-gray-500/70 text-white font-medium text-xs leading-tight uppercase 
+  hover:bg-gray-600 focus:bg-gray-600 focus:outline-none focus:ring-0 active:bg-gray-700 transition duration-150 ease-in-out;
+}
