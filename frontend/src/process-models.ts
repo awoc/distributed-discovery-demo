@@ -60,7 +60,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         overlap=false
     }
     `,
-    pt: `graph pt {
+    pt: `graph pt {circle
         graph [bgcolor=transparent rankdir=LR]
         node [fixedsize=false shape=ellipse]
         140702755300512 [label=participant color=black fontcolor=black fontsize=15 tooltip=participant]
@@ -191,11 +191,11 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140131384044720 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140131384041744 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140131379768640 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Order"]
+            140131379768640 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Order"]
             140131384043712 [label=A fontsize=15 shape=box tooltip=A]
             140131381131920 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140131379768400 [label=B fontsize=15 shape=box tooltip=B]
-            140131379767296 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Receipt"]
+            140131379767296 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Receipt"]
             140131379767392 [label=C fontsize=15 shape=box tooltip=C]
             140131384044672 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140131384044720 -> 140131384041744
@@ -211,9 +211,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_SendReceive2 {
             graph [bgcolor=transparent label=SendReceive2 rankdir=LR tooltip=SendReceive2]
             node [shape=box]
-            140131379766288 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive Order"]
+            140131379766288 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive Order"]
             140131379765472 [label=D fontsize=15 shape=box tooltip=D]
-            140131379764368 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Receipt"]
+            140131379764368 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Receipt"]
             140131379766288 -> 140131379765472
             140131379765472 -> 140131379764368
         }
@@ -451,8 +451,8 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140205491212720 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140205484940384 [label=A fontsize=15 shape=box tooltip=A]
             140205484941728 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140205491213776 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send to 3"]
-            140205486751696 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send to 2"]
+            140205491213776 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send to 3"]
+            140205486751696 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send to 2"]
             140205484941776 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140205486751072 [label=B fontsize=15 shape=box tooltip=B]
             140205491211328 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
@@ -470,7 +470,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140205484940144 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140205484939520 [label=E fontsize=15 shape=box tooltip=E]
-            140205484939184 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
+            140205484939184 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
             140205484939328 [label=F fontsize=15 shape=box tooltip=F]
             140205484941344 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140205484940144 -> 140205484939520
@@ -483,7 +483,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140205484938608 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140205484938080 [label=C fontsize=15 shape=box tooltip=C]
-            140205484937312 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order"]
+            140205484937312 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order"]
             140205484936256 [label=D fontsize=15 shape=box tooltip=D]
             140205484941392 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140205484938608 -> 140205484938080
@@ -708,7 +708,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140133699399168 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140133696549552 [label=C fontsize=15 shape=box tooltip=C]
-            140133694947040 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order"]
+            140133694947040 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order"]
             140133694947136 [label=D fontsize=15 shape=box tooltip=D]
             140133699399840 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140133699399168 -> 140133696549552
@@ -721,7 +721,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140133694947184 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140133695144192 [label=E fontsize=15 shape=box tooltip=E]
-            140133695144624 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
+            140133695144624 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
             140133695144864 [label=F fontsize=15 shape=box tooltip=F]
             140133694946944 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140133694947184 -> 140133695144192
@@ -735,8 +735,8 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140133695144912 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140133695145248 [label=A fontsize=15 shape=box tooltip=A]
             140133695145536 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            140133695145728 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Messages"]
-            140133695146112 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Messages"]
+            140133695145728 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Messages"]
+            140133695146112 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Messages"]
             140133695145584 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140133695145488 [label=B fontsize=15 shape=box tooltip=B]
             140133695144336 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
@@ -969,7 +969,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140432125586992 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140432121763568 [label=C fontsize=15 shape=box tooltip=C]
-            140432121763856 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Order"]
+            140432121763856 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Order"]
             140432125586992 -> 140432121763568
             140432121763568 -> 140432121763856
         }
@@ -979,8 +979,8 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140432121763904 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140432121764240 [label=A fontsize=15 shape=box tooltip=A]
             140432121764624 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            140432125959072 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Receipt"]
-            140432121527888 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order"]
+            140432125959072 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Receipt"]
+            140432121527888 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order"]
             140432125959216 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140432121762464 [label=B fontsize=15 shape=box tooltip=B]
             140432121764192 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
@@ -997,7 +997,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             graph [bgcolor=transparent label=OneFromMany3 rankdir=LR tooltip=OneFromMany3]
             node [shape=box]
             140432121762320 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
-            140432121761312 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Receipt"]
+            140432121761312 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Receipt"]
             140432121760784 [label=D fontsize=15 shape=box tooltip=D]
             140432121763664 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140432121762320 -> 140432121761312
@@ -1308,9 +1308,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140634361988576 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140634361990352 [label=D fontsize=15 shape=box tooltip=D]
-            140634357830400 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip=Receive]
+            140634357830400 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip=Receive]
             140634357830784 [label=E fontsize=15 shape=box tooltip=E]
-            140634357830928 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip=Send]
+            140634357830928 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip=Send]
             140634361988576 -> 140634361990352
             140634361990352 -> 140634357830400
             140634357830400 -> 140634357830784
@@ -1322,13 +1322,13 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140634361988672 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140634357830544 [label=A fontsize=15 shape=box tooltip=A]
             140634357831456 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            140634357831648 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip=Send]
-            140634357832032 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip=Send]
+            140634357831648 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip=Send]
+            140634357832032 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip=Send]
             140634357831504 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140634357832368 [label=B fontsize=15 shape=box tooltip=B]
             140634357832656 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            140634357832608 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive 2"]
-            140634357833040 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive 1"]
+            140634357832608 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive 2"]
+            140634357833040 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive 1"]
             140634357832704 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140634357833520 [label=C fontsize=15 shape=box tooltip=C]
             140634357830736 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
@@ -1352,9 +1352,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140634357833760 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140634357833568 [label=F fontsize=15 shape=box tooltip=F]
-            140634357833856 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
+            140634357833856 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Initiate"]
             140634357834240 [label=G fontsize=15 shape=box tooltip=G]
-            140634359709600 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Stream"]
+            140634359709600 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send Stream"]
             140634357833760 -> 140634357833568
             140634357833568 -> 140634357833856
             140634357833856 -> 140634357834240
@@ -1591,9 +1591,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140486464470752 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140486458235088 [label=D fontsize=15 shape=box tooltip=D]
-            140486458235472 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Stream Request"]
+            140486458235472 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Stream Request"]
             140486458235904 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140486458235568 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Stream"]
+            140486458235568 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Stream"]
             140486458236288 [label=E fontsize=15 shape=box tooltip=E]
             140486458235856 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140486458236960 [label=F fontsize=15 shape=box tooltip=F]
@@ -1613,9 +1613,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140486458235952 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140486458236000 [label=A fontsize=15 shape=box tooltip=A]
-            140486458235760 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip=Initiate]
+            140486458235760 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip=Initiate]
             140486458237584 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140486458228896 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Stream"]
+            140486458228896 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Stream"]
             140486458237968 [label=B fontsize=15 shape=box tooltip=B]
             140486458237536 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140486458238640 [label=C fontsize=15 shape=box tooltip=C]
@@ -2345,15 +2345,15 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_SupplierB {
             graph [bgcolor=transparent label=SupplierB rankdir=LR tooltip=SupplierB]
             node [shape=box]
-            139996391936336 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive Order B"]
+            139996391936336 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive Order B"]
             139996391934032 [label="Check Inventory" fontsize=15 shape=box tooltip="Check Inventory"]
-            139996391934656 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Order Status B"]
+            139996391934656 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Order Status B"]
             139996387815584 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139996387815632 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139996387815872 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Order Part C"]
+            139996387815872 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Order Part C"]
             139996387816496 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139996387816544 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139996387816784 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Part C"]
+            139996387816784 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Part C"]
             139996387817408 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139996387817456 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139996387817696 [label="Check Quality of Part C" fontsize=15 shape=box tooltip="Check Quality of Part C"]
@@ -2361,7 +2361,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             139996387818272 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139996387818512 [label=Assemble fontsize=15 shape=box tooltip=Assemble]
             139996387819040 [label="Check Quality of Part B" fontsize=15 shape=box tooltip="Check Quality of Part B"]
-            139996387819184 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Part B"]
+            139996387819184 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Part B"]
             139996391936336 -> 139996391934032
             139996391934032 -> 139996391934656
             139996391934656 -> 139996387815584
@@ -2386,26 +2386,26 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Manufacturer {
             graph [bgcolor=transparent label=Manufacturer rankdir=LR tooltip=Manufacturer]
             node [shape=box]
-            139996387819424 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive Order"]
+            139996387819424 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive Order"]
             139996387817600 [label="Process Order" fontsize=15 shape=box tooltip="Process Order"]
             139996387817312 [label="Calculate Required Parts" fontsize=15 shape=box tooltip="Calculate Required Parts"]
             139996387818416 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            139996391934416 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Order Product A"]
-            139996387807568 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Order Part B"]
+            139996391934416 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Order Product A"]
+            139996387807568 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Order Part B"]
             139996391940800 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139996387811168 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            139996387815344 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order Status B"]
-            139996387809920 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order Status A"]
+            139996387815344 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order Status B"]
+            139996387809920 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order Status A"]
             139996387808336 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139996387682304 [label="Estimate Delivery Date" fontsize=15 shape=box tooltip="Estimate Delivery Date"]
-            139996387685904 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Order Status Report"]
+            139996387685904 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Order Status Report"]
             139996387686576 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            139996391938448 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Product A"]
-            139996387917984 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Part B"]
+            139996391938448 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Product A"]
+            139996387917984 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Part B"]
             139996387688160 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139996387918608 [label="Manufacture Product" fontsize=15 shape=box tooltip="Manufacture Product"]
             139996387918896 [label="Check Product" fontsize=15 shape=box tooltip="Check Product"]
-            139996387919040 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Product"]
+            139996387919040 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Product"]
             139996387819424 -> 139996387817600
             139996387817600 -> 139996387817312
             139996387817312 -> 139996387818416
@@ -2432,12 +2432,12 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_SupplierA {
             graph [bgcolor=transparent label=SupplierA rankdir=LR tooltip=SupplierA]
             node [shape=box]
-            139996387815536 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive Order A"]
+            139996387815536 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive Order A"]
             139996387818896 [label="Estimate Delivery Date" fontsize=15 shape=box tooltip="Estimate Delivery Date"]
-            139996387816688 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Order Status A"]
+            139996387816688 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Order Status A"]
             139996387918800 [label="Manufacture Product A" fontsize=15 shape=box tooltip="Manufacture Product A"]
             139996387919472 [label="Check Quality of Order" fontsize=15 shape=box tooltip="Check Quality of Order"]
-            139996387919616 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Product A"]
+            139996387919616 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Product A"]
             139996387815536 -> 139996387818896
             139996387818896 -> 139996387816688
             139996387816688 -> 139996387918800
@@ -2447,10 +2447,10 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_SupplierC {
             graph [bgcolor=transparent label=SupplierC rankdir=LR tooltip=SupplierC]
             node [shape=box]
-            139996387816352 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive Order C"]
+            139996387816352 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive Order C"]
             139996387918560 [label="Manufacture Part C" fontsize=15 shape=box tooltip="Manufacture Part C"]
             139996387919808 [label="Check Quality of Part C" fontsize=15 shape=box tooltip="Check Quality of Part C"]
-            139996387920144 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Part C"]
+            139996387920144 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Deliver Part C"]
             139996387816352 -> 139996387918560
             139996387918560 -> 139996387919808
             139996387919808 -> 139996387920144
@@ -2459,9 +2459,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             graph [bgcolor=transparent label=Customer rankdir=LR tooltip=Customer]
             node [shape=box]
             139996387919856 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
-            139996387920384 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Order Product"]
-            139996387920672 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Order Status"]
-            139996387920912 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Product"]
+            139996387920384 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Order Product"]
+            139996387920672 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Order Status"]
+            139996387920912 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Product"]
             139996387919952 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             139996387919856 -> 139996387920384
             139996387920384 -> 139996387920672
@@ -2951,19 +2951,19 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Gynecologist {
             graph [bgcolor=transparent label=Gynecologist rankdir=LR tooltip=Gynecologist]
             node [shape=box]
-            139750881888384 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive disease info"]
+            139750881888384 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive disease info"]
             139750881837312 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139750881837360 [label="Examine patient" fontsize=15 shape=box tooltip="Examine patient"]
             139750877541184 [label="Blood draw" fontsize=15 shape=box tooltip="Blood draw"]
             139750881837264 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            139750877541568 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send blood sample"]
+            139750877541568 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send blood sample"]
             139750877542000 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139750877541808 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive blood analysis results"]
-            139750877541232 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send prescription"]
-            139750877542864 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Communicate the need to hospitalise"]
+            139750877541808 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive blood analysis results"]
+            139750877541232 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send prescription"]
+            139750877542864 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Communicate the need to hospitalise"]
             139750877542432 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139750877543344 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Require patient admission"]
-            139750877543584 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Forward patient analysis results"]
+            139750877543344 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Require patient admission"]
+            139750877543584 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Forward patient analysis results"]
             139750881933680 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             139750881888384 -> 139750881837312
             139750881837312 -> 139750881837360
@@ -2984,9 +2984,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Laboratory {
             graph [bgcolor=transparent label=Laboratory rankdir=LR tooltip=Laboratory]
             node [shape=box]
-            139750877541424 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive blood sample"]
+            139750877541424 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive blood sample"]
             139750877462832 [label="Analyse blood sample" fontsize=15 shape=box tooltip="Analyse blood sample"]
-            139750877474400 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send results"]
+            139750877474400 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send results"]
             139750877541424 -> 139750877462832
             139750877462832 -> 139750877474400
         }
@@ -2994,12 +2994,12 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             graph [bgcolor=transparent label=Patient rankdir=LR tooltip=Patient]
             node [shape=box]
             139750877471664 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
-            139750877478528 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Communicate disease"]
+            139750877478528 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Communicate disease"]
             139750877542768 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139750877542144 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive prescription"]
-            139750877539648 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Hospitalisation needed"]
+            139750877542144 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive prescription"]
+            139750877539648 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Hospitalisation needed"]
             139750877540608 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139750877538784 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive admission info"]
+            139750877538784 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive admission info"]
             139750877473584 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             139750877471664 -> 139750877478528
             139750877478528 -> 139750877542768
@@ -3013,13 +3013,13 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Hospital {
             graph [bgcolor=transparent label=Hospital rankdir=LR tooltip=Hospital]
             node [shape=box]
-            139750877538880 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Admit patient"]
+            139750877538880 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Admit patient"]
             139750877537008 [label="Create medical record" fontsize=15 shape=box tooltip="Create medical record"]
             139750877535424 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             139750877535040 [label="Request blood analysis" fontsize=15 shape=box tooltip="Request blood analysis"]
-            139750877533648 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive patient results"]
+            139750877533648 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive patient results"]
             139750877535136 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139750877536096 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send admission info"]
+            139750877536096 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Send admission info"]
             139750877538880 -> 139750877537008
             139750877537008 -> 139750877535424
             139750877535424 -> 139750877535040
@@ -3339,12 +3339,12 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140170569170608 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140170569239040 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140170564847312 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140170564846496 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Payment Received"]
-            140170564847936 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Order Ticket"]
-            140170564846832 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Confirm Booking"]
-            140170569236640 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Book Received"]
+            140170564846496 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Payment Received"]
+            140170564847936 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Order Ticket"]
+            140170564846832 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Confirm Booking"]
+            140170569236640 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Book Received"]
             140170569237024 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            140170564847264 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Make Travel Offer"]
+            140170564847264 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Make Travel Offer"]
             140170564847168 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140170569236736 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140170569170608 -> 140170569239040
@@ -3368,12 +3368,12 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             node [shape=box]
             140170564847456 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
             140170564848896 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140170564848848 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Check Travel Offer"]
+            140170564848848 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Check Travel Offer"]
             140170564848704 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140170564849760 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Book Travel"]
-            140170564850048 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Pay Travel"]
-            140170564850816 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Ticket Received"]
-            140170564850960 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Booking Confirmed"]
+            140170564849760 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Book Travel"]
+            140170564850048 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Pay Travel"]
+            140170564850816 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Ticket Received"]
+            140170564850960 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Booking Confirmed"]
             140170564848320 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140170564847456 -> 140170564848896
             140170564848896 -> 140170564848848
@@ -3912,21 +3912,21 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Thermostat {
             graph [bgcolor=transparent label=Thermostat rankdir=LR tooltip=Thermostat]
             node [shape=box]
-            140242823561520 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Power On"]
+            140242823561520 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Power On"]
             140242823561376 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140242819225664 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819328816 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Power Off"]
+            140242819328816 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Power Off"]
             140242819231616 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819222304 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Turn On Controller"]
-            140242819328384 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Turn Off"]
+            140242819222304 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Turn On Controller"]
+            140242819328384 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Turn Off"]
             140242819226192 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819328720 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140242819222496 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819227008 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819234400 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Receive Info"]
+            140242819234400 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Receive Info"]
             140242819326464 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819325120 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819327664 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Temperature"]
+            140242819327664 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Temperature"]
             140242819235408 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242823515824 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140242823561520 -> 140242823561376
@@ -3954,10 +3954,10 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Controller {
             graph [bgcolor=transparent label=Controller rankdir=LR tooltip=Controller]
             node [shape=box]
-            140242819221152 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Switch On"]
+            140242819221152 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Switch On"]
             140242819229072 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             140242819325216 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819325456 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Switch Off"]
+            140242819325456 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Switch Off"]
             140242819321664 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819328336 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819225712 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
@@ -3970,7 +3970,7 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             140242819322240 [label="Update Avg" fontsize=15 shape=box tooltip="Update Avg"]
             140242819317968 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819329296 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819329488 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send Env Info"]
+            140242819329488 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send Env Info"]
             140242819323440 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819232576 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             140242819221152 -> 140242819229072
@@ -4002,13 +4002,13 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             graph [bgcolor=transparent label=User rankdir=LR tooltip=User]
             node [shape=box]
             140242819322336 [label="" fillcolor=green fontsize=15 shape=circle style=filled tooltip="Start Event"]
-            140242819322576 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Set Up Thermostat"]
+            140242819322576 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Set Up Thermostat"]
             140242819322144 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819330592 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
             140242819318160 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819330928 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Check Environment Temperature"]
+            140242819330928 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Check Environment Temperature"]
             140242819329056 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            140242819331744 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Switch Off Thermostat"]
+            140242819331744 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Switch Off Thermostat"]
             140242819322336 -> 140242819322576
             140242819322576 -> 140242819322144
             140242819322144 -> 140242819330592
@@ -4432,9 +4432,9 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
             139752596227792 [label="Prepare personal information" fontsize=15 shape=box tooltip="Prepare personal information"]
             139752596228128 [label="Prepare family's information" fontsize=15 shape=box tooltip="Prepare family's information"]
             139752596226448 [label=X fontsize=15 shape=diamond tooltip="Exclusive Gateway"]
-            139752596227168 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send information to the ZooClub department"]
+            139752596227168 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send information to the ZooClub department"]
             139752596226592 [label="Wait for card" fontsize=15 shape=box tooltip="Wait for card"]
-            139752596240896 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Card received?"]
+            139752596240896 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Card received?"]
             139752596241520 [label="Go home" fontsize=15 shape=box tooltip="Go home"]
             139752600584400 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             139752600593616 -> 139752600584784
@@ -4452,28 +4452,28 @@ const processModel: { [scenario: string]: { [modelNotation: string]: string } } 
         subgraph cluster_Bank {
             graph [bgcolor=transparent label=Bank rankdir=LR tooltip=Bank]
             node [shape=box]
-            139752596240368 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive payment request"]
+            139752596240368 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive payment request"]
             139752596234608 [label="Process payment information" fontsize=15 shape=box tooltip="Process payment information"]
-            139752596239456 [label="" fillcolor=orange fontsize=15 image="/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Change account"]
+            139752596239456 [label="" fillcolor=orange fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" penwidth=3 shape=circle style=filled tooltip="Change account"]
             139752596240368 -> 139752596234608
             139752596234608 -> 139752596239456
         }
         subgraph cluster_Zoo {
             graph [bgcolor=transparent label=Zoo rankdir=LR tooltip=Zoo]
             node [shape=box]
-            139752596241808 [label="" fillcolor=green fontsize=15 image="/envelope.svg" shape=circle style=filled tooltip="Receive visitor information"]
+            139752596241808 [label="" fillcolor=green fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=circle style=filled tooltip="Receive visitor information"]
             139752596241328 [label="Enter customer data into the system" fontsize=15 shape=box tooltip="Enter customer data into the system"]
             139752596241856 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139752596324656 [label="Send request to billing department" fontsize=15 shape=box tooltip="Send request to billing department"]
             139752596324848 [label="Mail ZooClub magazine" fontsize=15 shape=box tooltip="Mail ZooClub magazine"]
             139752596240176 [label="Forward information to making department" fontsize=15 shape=box tooltip="Forward information to making department"]
-            139752596325664 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Deliver Zooclub card"]
+            139752596325664 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Deliver Zooclub card"]
             139752596325808 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139752596242192 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
             139752596325760 [label="Wait fot payment" fontsize=15 shape=box tooltip="Wait fot payment"]
-            139752596326672 [label="" fontsize=15 image="/envelope_full.svg" shape=doublecircle tooltip="Send payment request"]
+            139752596326672 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope_full.svg" shape=doublecircle tooltip="Send payment request"]
             139752596326048 [label="+" fontsize=15 shape=diamond tooltip="Parallel Gateway"]
-            139752596325616 [label="" fontsize=15 image="/envelope.svg" shape=doublecircle tooltip="Payment confirmed"]
+            139752596325616 [label="" fontsize=15 image="https://awoc.github.io/distributed-discovery-demo/envelope.svg" shape=doublecircle tooltip="Payment confirmed"]
             139752596241760 [label="" fillcolor=orange fontsize=15 penwidth=3 shape=circle style=filled tooltip="End Event"]
             139752596241808 -> 139752596241328
             139752596241328 -> 139752596241856

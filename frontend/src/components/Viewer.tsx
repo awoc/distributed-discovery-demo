@@ -32,8 +32,8 @@ const Viewer = ({ dot }: { dot: string }) => {
         () => transition().duration(250) as any as Transition<BaseType, any, BaseType, any>
       );
       graphviz(`#${id}`)
-        .addImage('/envelope.svg', '24', '18')
-        .addImage('/envelope_full.svg', '24', '18')
+        .addImage('envelope.svg', '24', '18')
+        .addImage('envelope_full.svg', '24', '18')
         .renderDot(dot);
     }
   }, [graphvizRoot]);

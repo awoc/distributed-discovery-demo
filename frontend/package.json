@@ -1,4 +1,5 @@
 {
+  "homepage": "https://awoc.github.io/distributed-discovery-demo",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
