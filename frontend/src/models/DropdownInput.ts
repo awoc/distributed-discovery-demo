@@ -79,12 +79,12 @@ export const models: DropdownInput[] = [
     parameter: 'dfg_frequency'
   },
   {
-    id: 3,
+    id: 4,
     name: 'DFG Performance',
     parameter: 'dfg_performance'
   },
   {
-    id: 4,
+    id: 5,
     name: 'BPMN',
     parameter: 'bpmn'
   }
